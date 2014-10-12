@@ -10,10 +10,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.miagegrenoble.cleavie.R;
-import java.util.ArrayList;
+
 import java.util.List;
 
 import adapter.ListInfoAdapter;
@@ -27,20 +25,14 @@ import data.IPatient;
 
 public class TabFragment1 extends Fragment {
     IPatient patient = null;
-    ListView listChamps = null;
-    TextView titreChamps = null;
+    ListView listInfos = null;
     ArrayAdapter<String> listAdapter = null;
 
      @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Activity a = this.getActivity();
-        if (a instanceof MediaActivity) {
-            mediaActivity = (MediaActivity) a;
-        } else {
-            throw new IllegalAccessError("Parent activity not an MediaActivity");
-        }
 
         View rootView = super.onCreateView(inflater, container, savedInstanceState);
+
 
         // Liste des infos
         List<IInfo> infos = patient.getListInfos();
@@ -52,12 +44,12 @@ public class TabFragment1 extends Fragment {
 
         View expView = rootView.findViewById(R.id.listChild);
         if (expView instanceof ListView) {
-            listView = (ListView) expView;
+            listInfos = (ListView) expView;
         } else {
             Log.e(this.getClass().getName(), "listChild not a list view");
         }
-        listAdapter = new ListInfoAdapter(getActivity(), lesInfos);
-        listView.setAdapter(listAdapter);
+        listAdapter = new ListInfoAdapter(getActivity(), infos);
+        listInfos.setAdapter(listAdapter);
 
         return rootView;
     }
