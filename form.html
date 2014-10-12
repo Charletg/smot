@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Cléavie</title>
+            <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+    </head>
+
+    <body>
+        <form method="post" action="traitement.php">
+            <label for="nom">Votre nom :</label>
+            <input type="text" name="nom" id="nom" placeholder="Ex : Martin" size="30" maxlength="20" />
+            <br />
+            <label for="prenom">Votre pr&eacute;nom :</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Ex : Paul" size="30" maxlength="20" />
+            <br />
+            <label for="age">Votre âge :</label>
+            <input type="number" name="age" id="age" size="30" maxlength="20" />
+            <br />
+            <label for="groupeSanguin">Votre groupe sanguin :</label>
+            <input type="radio" name="groupeSanguin" id="A+" value="A+"/>
+            <label for="A+">A+</label>
+            <input type="radio" name="groupeSanguin" id="A-" value="A-"/>
+            <label for="A-">A-</label>
+            <input type="radio" name="groupeSanguin" id="B+" value="B+"/>
+            <label for="B+">B+</label>
+            <input type="radio" name="groupeSanguin" id="B-" value="B-"/>
+            <label for="B-">B-</label>
+            <input type="radio" name="groupeSanguin" id="AB+" value="AB+"/>
+            <label for="AB+">AB+</label>
+            <input type="radio" name="groupeSanguin" id="AB-" value="AB-"/>
+            <label for="AB-">AB-</label>
+            <input type="radio" name="groupeSanguin" id="O+" value="O+"/>
+            <label for="O-">O-</label>
+            <input type="radio" name="groupeSanguin" id="O-" value="O-"/>
+            <label for="O-">O-</label>
+            <br />
+            <label for="nomMedecin">Nom de votre M&eacute;decin :</label>
+            <input type="text" name="nomMedecin" id="nomMedecin" placeholder="Ex : Dr Maboul" size="30" maxlength="20" />
+            <br />
+            <label for="numeroMedecin">Numéro de votre M&eacute;decin :</label>
+            <input type="tel" name="numeroMedecin" id="numeroMedecin" placeholder="Ex : 0123456789"/>
+            <br />
+            <label for="numeroUrgences">Num&eacute;ro de la personne &agrave; contacter en cas d'urgences :</label>
+            <input type="tel" name="numeroUrgences" id="numeroUrgences" placeholder="Ex : 0123456789"/>
+            <br />
+            <input type="button" value="Je valide !" />
+            
+            
+        </form>
+    </body>
+
+</html> 
