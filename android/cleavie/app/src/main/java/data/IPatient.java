@@ -11,7 +11,7 @@ public class IPatient implements Ilink{
     List<IContact> ListContacts;
 
     public IPatient(int id, String nom, String prenom, List<IInfo> listInfos, List<IContact> listContacts) {
-     this.Id = id;
+        this.Id = id;
         this.Nom = nom;
         this.Prenom = prenom;
         this.ListInfos = listInfos;
@@ -19,7 +19,17 @@ public class IPatient implements Ilink{
     }
 
 
+    public List<IInfo> getListInfos(){
+        return this.ListInfos;
+    }
 
+    public List<IContact> getListContacts(){
+        return this.ListContacts;
+    }
+
+    public String getPrenom(){
+        return this.Prenom;
+    }
     @Override
     public Integer getId() {
         return null;
