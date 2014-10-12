@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The colors-->
+    <color name="appColor">#0099CC</color>
+    <color name="tabColor">#33B5E5</color>
+
+    <!-- Basics colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FF8800</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="DarkGray">#898888</color>
+
+    <!-- Accueil -->
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+
+    <!-- Items of NavDrawerRight -->
+    <color name="item_current_scene">#101080</color>
+    <color name="item_histo_scene">#707070</color>
+    <color name="item_new_scene">#5050b0</color>
+    <color name="item_pressed">#b0b0b0</color>
+    <color name="item_header_progress">#707070</color>
+
+</resources>
