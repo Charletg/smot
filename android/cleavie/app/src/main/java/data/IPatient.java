@@ -30,6 +30,12 @@ public class IPatient implements Ilink{
     public String getPrenom(){
         return this.Prenom;
     }
+
+    @Override
+    public String toString(){
+        return "{ \"nom\" : \"" + Nom + "\", \"prenom\" : \"" + Prenom + "\", \"informations\" : \"" + ListInfos + "\", \"Contacts\" : \"" + ListContacts + "\" }"
+    }
+
     @Override
     public Integer getId() {
         return null;
