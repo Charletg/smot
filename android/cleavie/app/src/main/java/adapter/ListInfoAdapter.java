@@ -41,7 +41,6 @@ public class ListInfoAdapter extends BaseAdapter{
         return position;
     }
 
-    @SuppressLint("NewApi")
     public View getView(int position, View convertView, ViewGroup parent) {
 
         if (inflater == null)
