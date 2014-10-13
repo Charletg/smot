@@ -12,7 +12,6 @@ import android.widget.ListView;
 import com.miagegrenoble.cleavie.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import adapter.ListInfoAdapter;
 import data.IInfo;
@@ -52,6 +51,7 @@ public class TabFragment1 extends Fragment {
         }
         listAdapter = new ListInfoAdapter(getActivity(), lesInfos);
         listView.setAdapter(listAdapter);
+
 
         return rootView;
     }

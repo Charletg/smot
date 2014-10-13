@@ -33,7 +33,7 @@ public class IPatient implements Ilink{
 
     @Override
     public String toString(){
-        return "{ \"nom\" : \"" + Nom + "\", \"prenom\" : \"" + Prenom + "\", \"informations\" : \"" + ListInfos + "\", \"Contacts\" : \"" + ListContacts + "\" }"
+        return "{ \"nom\" : \"" + Nom + "\", \"prenom\" : \"" + Prenom + "\", \"informations\" : \"" + ListInfos + "\", \"Contacts\" : \"" + ListContacts + "\" }";
     }
 
     @Override
